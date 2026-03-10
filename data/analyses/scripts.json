@@ -1,0 +1,804 @@
+{
+  "structure_ranking": [
+    {
+      "structure": "LISTICLE",
+      "count": 9,
+      "avg_views": 280084.55555555556,
+      "avg_er": 5.406666666666667,
+      "avg_duration": 77.5371111111111,
+      "avg_words": 268.55555555555554
+    },
+    {
+      "structure": "DIRETO/OPINIÃO",
+      "count": 146,
+      "avg_views": 277248.9246575342,
+      "avg_er": 5.480479452054797,
+      "avg_duration": 33.130458904109595,
+      "avg_words": 95.37671232876713
+    },
+    {
+      "structure": "TUTORIAL",
+      "count": 113,
+      "avg_views": 261281.49557522123,
+      "avg_er": 4.963893805309734,
+      "avg_duration": 92.39063392857145,
+      "avg_words": 307.646017699115
+    },
+    {
+      "structure": "REVIEW/RECOMENDAÇÃO",
+      "count": 39,
+      "avg_views": 251267.1794871795,
+      "avg_er": 6.923076923076923,
+      "avg_duration": 45.14341025641025,
+      "avg_words": 132.64102564102564
+    },
+    {
+      "structure": "DEMONSTRAÇÃO_VISUAL",
+      "count": 14,
+      "avg_views": 247934.92857142858,
+      "avg_er": 4.497142857142857,
+      "avg_duration": 40.43564285714285,
+      "avg_words": 137.21428571428572
+    },
+    {
+      "structure": "PROBLEMA→SOLUÇÃO",
+      "count": 23,
+      "avg_views": 206081.78260869565,
+      "avg_er": 4.278260869565217,
+      "avg_duration": 66.216,
+      "avg_words": 214.8695652173913
+    },
+    {
+      "structure": "DIAGNÓSTICO→RECEITA",
+      "count": 6,
+      "avg_views": 145935.16666666666,
+      "avg_er": 7.329999999999999,
+      "avg_duration": 33.44016666666666,
+      "avg_words": 108.33333333333333
+    },
+    {
+      "structure": "MITO→VERDADE",
+      "count": 9,
+      "avg_views": 128251.44444444444,
+      "avg_er": 4.668888888888889,
+      "avg_duration": 47.289,
+      "avg_words": 140.44444444444446
+    },
+    {
+      "structure": "EXPLICATIVO",
+      "count": 6,
+      "avg_views": 120118.66666666667,
+      "avg_er": 13.396666666666668,
+      "avg_duration": 43.544000000000004,
+      "avg_words": 141.0
+    },
+    {
+      "structure": "PERGUNTA→RESPOSTA",
+      "count": 2,
+      "avg_views": 114200.0,
+      "avg_er": 8.620000000000001,
+      "avg_duration": 62.93299999999999,
+      "avg_words": 163.0
+    }
+  ],
+  "duration_analysis": {
+    "0-15s": {
+      "range": [
+        0,
+        15
+      ],
+      "posts": 40
+    },
+    "16-30s": {
+      "range": [
+        16,
+        30
+      ],
+      "posts": 60
+    },
+    "31-60s": {
+      "range": [
+        31,
+        60
+      ],
+      "posts": 145
+    },
+    "61-90s": {
+      "range": [
+        61,
+        90
+      ],
+      "posts": 88
+    },
+    "91-180s": {
+      "range": [
+        91,
+        180
+      ],
+      "posts": 17
+    },
+    "180s+": {
+      "range": [
+        181,
+        99999
+      ],
+      "posts": 3
+    }
+  },
+  "top_15_by_er": [
+    {
+      "id": "3636181500527542090",
+      "owner": "dra.cristinasalaro",
+      "views": 90017,
+      "likes": 51005,
+      "comments": 3528,
+      "er": 60.58,
+      "language": "pt",
+      "duration": 50.2,
+      "word_count": 12,
+      "structure": "DIRETO/OPINIÃO",
+      "blocks": [
+        "HOOK:alerta",
+        "CONTEÚDO_DIRETO",
+        "FINAL_ABRUPTO"
+      ],
+      "url": "https://www.instagram.com/p/DJ2T881yn9K/"
+    },
+    {
+      "id": "3835555010973987311",
+      "owner": "clinicavolpe",
+      "views": 81587,
+      "likes": 9775,
+      "comments": 9832,
+      "er": 24.03,
+      "language": "pt",
+      "duration": 55.75,
+      "word_count": 194,
+      "structure": "DIRETO/OPINIÃO",
+      "blocks": [
+        "HOOK:lista",
+        "PROBLEMA",
+        "CTA",
+        "CONCLUSÃO"
+      ],
+      "url": "https://www.instagram.com/p/DU6oPX5kvHv/"
+    },
+    {
+      "id": "3784648029715202173",
+      "owner": "shereeneidriss",
+      "views": 41384,
+      "likes": -1,
+      "comments": 9508,
+      "er": 22.97,
+      "language": "en",
+      "duration": 35.433,
+      "word_count": 107,
+      "structure": "DIRETO/OPINIÃO",
+      "blocks": [
+        "HOOK:condicional",
+        "CONTEÚDO_DIRETO",
+        "FINAL_ABRUPTO"
+      ],
+      "url": "https://www.instagram.com/p/DSFxVTDDoB9/"
+    },
+    {
+      "id": "3811637537128228505",
+      "owner": "clinicavolpe",
+      "views": 114803,
+      "likes": 16827,
+      "comments": 8260,
+      "er": 21.85,
+      "language": "pt",
+      "duration": 59.966,
+      "word_count": 182,
+      "structure": "EXPLICATIVO",
+      "blocks": [
+        "HOOK:declaração",
+        "EXPLICAÇÃO",
+        "PROMESSA_FINAL"
+      ],
+      "url": "https://www.instagram.com/p/DTlqCUlEqaZ/"
+    },
+    {
+      "id": "3785485232942217718",
+      "owner": "dra.cristinasalaro",
+      "views": 15841,
+      "likes": 3295,
+      "comments": 127,
+      "er": 21.6,
+      "language": "pt",
+      "duration": 37.066,
+      "word_count": 97,
+      "structure": "LISTICLE",
+      "blocks": [
+        "HOOK:lista",
+        "PASSO-A-PASSO",
+        "PERGUNTA_FINAL"
+      ],
+      "url": "https://www.instagram.com/p/DSIvsNUAfn2/"
+    },
+    {
+      "id": "3810919358952170001",
+      "owner": "clinicavolpe",
+      "views": 100923,
+      "likes": 9953,
+      "comments": 10973,
+      "er": 20.73,
+      "language": "pt",
+      "duration": 25.766,
+      "word_count": 90,
+      "structure": "REVIEW/RECOMENDAÇÃO",
+      "blocks": [
+        "HOOK:declaração",
+        "EXPLICAÇÃO",
+        "PRODUTO/RECOMENDAÇÃO",
+        "FINAL_ABRUPTO"
+      ],
+      "url": "https://www.instagram.com/p/DTjGvdCAOIR/"
+    },
+    {
+      "id": "3845706520452949587",
+      "owner": "clinicavolpe",
+      "views": 261076,
+      "likes": 32154,
+      "comments": 19588,
+      "er": 19.82,
+      "language": "pt",
+      "duration": 64.2,
+      "word_count": 236,
+      "structure": "TUTORIAL",
+      "blocks": [
+        "HOOK:alerta",
+        "PASSO-A-PASSO",
+        "PRODUTO/RECOMENDAÇÃO",
+        "CONCLUSÃO",
+        "PROMESSA_FINAL"
+      ],
+      "url": "https://www.instagram.com/p/DVesbR2AGZT/"
+    },
+    {
+      "id": "3831953426762235477",
+      "owner": "clinicavolpe",
+      "views": 140632,
+      "likes": 14722,
+      "comments": 13006,
+      "er": 19.72,
+      "language": "pt",
+      "duration": 83.473,
+      "word_count": 305,
+      "structure": "TUTORIAL",
+      "blocks": [
+        "HOOK:alerta",
+        "EXPLICAÇÃO",
+        "PASSO-A-PASSO",
+        "CONCLUSÃO",
+        "PERGUNTA_FINAL"
+      ],
+      "url": "https://www.instagram.com/p/DUt1VbOAP5V/"
+    },
+    {
+      "id": "3784821468664209098",
+      "owner": "clinicavolpe",
+      "views": 196729,
+      "likes": 38031,
+      "comments": 590,
+      "er": 19.63,
+      "language": "pt",
+      "duration": 22.566,
+      "word_count": 61,
+      "structure": "DIRETO/OPINIÃO",
+      "blocks": [
+        "HOOK:declaração",
+        "CONTEÚDO_DIRETO",
+        "CTA",
+        "CONCLUSÃO"
+      ],
+      "url": "https://www.instagram.com/p/DSGYxKqAJ7K/"
+    },
+    {
+      "id": "3808734289811637646",
+      "owner": "clinicavolpe",
+      "views": 234564,
+      "likes": 18368,
+      "comments": 25948,
+      "er": 18.89,
+      "language": "pt",
+      "duration": 32.866,
+      "word_count": 112,
+      "structure": "PROBLEMA→SOLUÇÃO",
+      "blocks": [
+        "HOOK:alerta",
+        "PROBLEMA",
+        "PRODUTO/RECOMENDAÇÃO",
+        "PERGUNTA_FINAL"
+      ],
+      "url": "https://www.instagram.com/p/DTbV6g0EoWO/"
+    },
+    {
+      "id": "3780486084316627327",
+      "owner": "clinicavolpe",
+      "views": 82805,
+      "likes": 7205,
+      "comments": 8406,
+      "er": 18.85,
+      "language": "pt",
+      "duration": 23.01,
+      "word_count": 93,
+      "structure": "DIRETO/OPINIÃO",
+      "blocks": [
+        "HOOK:lista",
+        "CONTEÚDO_DIRETO",
+        "CONCLUSÃO"
+      ],
+      "url": "https://www.instagram.com/p/DR2_BBWAAF_/"
+    },
+    {
+      "id": "3626759366544811348",
+      "owner": "dra.cristinasalaro",
+      "views": 14062,
+      "likes": 2608,
+      "comments": 38,
+      "er": 18.82,
+      "language": "en",
+      "duration": 8.633,
+      "word_count": 20,
+      "structure": "DIRETO/OPINIÃO",
+      "blocks": [
+        "HOOK:alerta",
+        "CONTEÚDO_DIRETO",
+        "FINAL_ABRUPTO"
+      ],
+      "url": "https://www.instagram.com/p/DJU1m2wuWVU/"
+    },
+    {
+      "id": "3628208700977141808",
+      "owner": "dra.cristinasalaro",
+      "views": 10959,
+      "likes": 1990,
+      "comments": 51,
+      "er": 18.62,
+      "language": "pt",
+      "duration": 15.4,
+      "word_count": 42,
+      "structure": "DEMONSTRAÇÃO_VISUAL",
+      "blocks": [
+        "HOOK:demonstração",
+        "CONTEÚDO_DIRETO",
+        "PERGUNTA_FINAL"
+      ],
+      "url": "https://www.instagram.com/p/DJZ_JcouVgw/"
+    },
+    {
+      "id": "3744233349188846028",
+      "owner": "clinicavolpe",
+      "views": 157483,
+      "likes": 18022,
+      "comments": 11071,
+      "er": 18.47,
+      "language": "pt",
+      "duration": 72.866,
+      "word_count": 232,
+      "structure": "PROBLEMA→SOLUÇÃO",
+      "blocks": [
+        "HOOK:declaração",
+        "PROBLEMA",
+        "EXPLICAÇÃO",
+        "CTA",
+        "CONCLUSÃO"
+      ],
+      "url": "https://www.instagram.com/p/DP2MGSukoHM/"
+    },
+    {
+      "id": "3821790647431628416",
+      "owner": "clinicavolpe",
+      "views": 104245,
+      "likes": 10931,
+      "comments": 6575,
+      "er": 16.79,
+      "language": "pt",
+      "duration": 69.766,
+      "word_count": 240,
+      "structure": "TUTORIAL",
+      "blocks": [
+        "HOOK:pergunta",
+        "PASSO-A-PASSO",
+        "LISTA",
+        "PRODUTO/RECOMENDAÇÃO",
+        "CONCLUSÃO"
+      ],
+      "url": "https://www.instagram.com/p/DUJulhaEoaA/"
+    }
+  ],
+  "top_15_by_views": [
+    {
+      "id": "3690539855352919187",
+      "owner": "dra.cristinasalaro",
+      "views": 5077061,
+      "likes": 65829,
+      "comments": 4372,
+      "er": 1.38,
+      "language": "en",
+      "duration": 41.7,
+      "word_count": 10,
+      "structure": "DIRETO/OPINIÃO",
+      "blocks": [
+        "HOOK:declaração",
+        "CONTEÚDO_DIRETO",
+        "CONCLUSÃO"
+      ],
+      "url": "https://www.instagram.com/p/DM3bnHzu3ST/"
+    },
+    {
+      "id": "3764263288986036370",
+      "owner": "dermguru",
+      "views": 2764080,
+      "likes": 29690,
+      "comments": 1709,
+      "er": 1.14,
+      "language": "en",
+      "duration": 67.233,
+      "word_count": 208,
+      "structure": "TUTORIAL",
+      "blocks": [
+        "HOOK:demonstração",
+        "LISTA",
+        "FINAL_ABRUPTO"
+      ],
+      "url": "https://www.instagram.com/p/DQ9WYR1DmiS/"
+    },
+    {
+      "id": "3715909832391138724",
+      "owner": "dra.cristinasalaro",
+      "views": 2540710,
+      "likes": 112847,
+      "comments": 2166,
+      "er": 4.53,
+      "language": "pt",
+      "duration": 44.733,
+      "word_count": 132,
+      "structure": "DIRETO/OPINIÃO",
+      "blocks": [
+        "HOOK:pergunta",
+        "CONTEÚDO_DIRETO",
+        "PERGUNTA_FINAL"
+      ],
+      "url": "https://www.instagram.com/p/DORkE4JDh2k/"
+    },
+    {
+      "id": "3796380204383003751",
+      "owner": "dermaedo",
+      "views": 2381908,
+      "likes": 31742,
+      "comments": 1024,
+      "er": 1.38,
+      "language": "es",
+      "duration": 36.966,
+      "word_count": 123,
+      "structure": "REVIEW/RECOMENDAÇÃO",
+      "blocks": [
+        "HOOK:alerta",
+        "PRODUTO/RECOMENDAÇÃO",
+        "CTA"
+      ],
+      "url": "https://www.instagram.com/p/DSvc66KkuRn/"
+    },
+    {
+      "id": "3713012657076221464",
+      "owner": "dra.cristinasalaro",
+      "views": 1829400,
+      "likes": 55883,
+      "comments": 1753,
+      "er": 3.15,
+      "language": "pt",
+      "duration": 23.733,
+      "word_count": 79,
+      "structure": "DIRETO/OPINIÃO",
+      "blocks": [
+        "HOOK:alerta",
+        "CONTEÚDO_DIRETO",
+        "CONCLUSÃO",
+        "PERGUNTA_FINAL"
+      ],
+      "url": "https://www.instagram.com/p/DOHRVbXjrYY/"
+    },
+    {
+      "id": "3769394840103434655",
+      "owner": "shereeneidriss",
+      "views": 1630625,
+      "likes": -1,
+      "comments": 544,
+      "er": 0.03,
+      "language": "en",
+      "duration": 20.71,
+      "word_count": 35,
+      "structure": "DIRETO/OPINIÃO",
+      "blocks": [
+        "HOOK:declaração",
+        "CONTEÚDO_DIRETO",
+        "FINAL_ABRUPTO"
+      ],
+      "url": "https://www.instagram.com/p/DRPlKLOjjmf/"
+    },
+    {
+      "id": "3399240088472218371",
+      "owner": "clinicavolpe",
+      "views": 1497954,
+      "likes": 95520,
+      "comments": 15176,
+      "er": 7.39,
+      "language": "pt",
+      "duration": 47,
+      "word_count": 180,
+      "structure": "TUTORIAL",
+      "blocks": [
+        "HOOK:alerta",
+        "PROBLEMA",
+        "PASSO-A-PASSO",
+        "CONCLUSÃO",
+        "PERGUNTA_FINAL"
+      ],
+      "url": "https://www.instagram.com/p/C8shtm7p2sD/"
+    },
+    {
+      "id": "3814271801849963727",
+      "owner": "dermguru",
+      "views": 1461335,
+      "likes": 45964,
+      "comments": 3147,
+      "er": 3.36,
+      "language": "en",
+      "duration": 61.7,
+      "word_count": 212,
+      "structure": "TUTORIAL",
+      "blocks": [
+        "HOOK:demonstração",
+        "PROBLEMA",
+        "LISTA",
+        "PRODUTO/RECOMENDAÇÃO",
+        "CONCLUSÃO",
+        "PROMESSA_FINAL"
+      ],
+      "url": "https://www.instagram.com/p/DTvA_6yDmTP/"
+    },
+    {
+      "id": "3834576306902438349",
+      "owner": "dermatologosonline.cl",
+      "views": 1414736,
+      "likes": 60175,
+      "comments": 462,
+      "er": 4.29,
+      "language": "en",
+      "duration": 9.5,
+      "word_count": 24,
+      "structure": "DEMONSTRAÇÃO_VISUAL",
+      "blocks": [
+        "HOOK:demonstração",
+        "CONTEÚDO_DIRETO",
+        "FINAL_ABRUPTO"
+      ],
+      "url": "https://www.instagram.com/p/DU3JtWtDJHN/"
+    },
+    {
+      "id": "3805779145557777528",
+      "owner": "dra.cristinasalaro",
+      "views": 1405926,
+      "likes": 40430,
+      "comments": 201,
+      "er": 2.89,
+      "language": "en",
+      "duration": 6.3,
+      "word_count": 24,
+      "structure": "DIRETO/OPINIÃO",
+      "blocks": [
+        "HOOK:declaração",
+        "CONTEÚDO_DIRETO",
+        "FINAL_ABRUPTO"
+      ],
+      "url": "https://www.instagram.com/p/DTQ1_gQj5x4/"
+    },
+    {
+      "id": "3758516007338857054",
+      "owner": "dermaedo",
+      "views": 1273453,
+      "likes": 66626,
+      "comments": 926,
+      "er": 5.3,
+      "language": "es",
+      "duration": 39.566,
+      "word_count": 131,
+      "structure": "DIRETO/OPINIÃO",
+      "blocks": [
+        "HOOK:alerta",
+        "CONTEÚDO_DIRETO",
+        "CONCLUSÃO"
+      ],
+      "url": "https://www.instagram.com/p/DQo7mUsDVJe/"
+    },
+    {
+      "id": "3561529503434545072",
+      "owner": "dra.cristinasalaro",
+      "views": 1184226,
+      "likes": 9517,
+      "comments": 522,
+      "er": 0.85,
+      "language": "pt",
+      "duration": 21.1,
+      "word_count": 72,
+      "structure": "DIRETO/OPINIÃO",
+      "blocks": [
+        "HOOK:alerta",
+        "CONTEÚDO_DIRETO",
+        "FINAL_ABRUPTO"
+      ],
+      "url": "https://www.instagram.com/p/DFtGDatShew/"
+    },
+    {
+      "id": "3841810819625924013",
+      "owner": "dermguru",
+      "views": 1153311,
+      "likes": 40731,
+      "comments": 831,
+      "er": 3.6,
+      "language": "en",
+      "duration": 86.566,
+      "word_count": 273,
+      "structure": "PROBLEMA→SOLUÇÃO",
+      "blocks": [
+        "HOOK:demonstração",
+        "PROBLEMA",
+        "PRODUTO/RECOMENDAÇÃO",
+        "PROMESSA_FINAL"
+      ],
+      "url": "https://www.instagram.com/p/DVQ2pXuDjWt/"
+    },
+    {
+      "id": "3843141517247184902",
+      "owner": "melrobbins",
+      "views": 1145686,
+      "likes": 38324,
+      "comments": 3356,
+      "er": 3.64,
+      "language": "en",
+      "duration": 244.843,
+      "word_count": 812,
+      "structure": "TUTORIAL",
+      "blocks": [
+        "HOOK:declaração",
+        "PROBLEMA",
+        "EXPLICAÇÃO",
+        "PASSO-A-PASSO",
+        "LISTA",
+        "PRODUTO/RECOMENDAÇÃO",
+        "CTA",
+        "CONCLUSÃO",
+        "PROMESSA_FINAL"
+      ],
+      "url": "https://www.instagram.com/p/DVVlNkdEwAG/"
+    },
+    {
+      "id": "3841386618112904099",
+      "owner": "melrobbins",
+      "views": 1029194,
+      "likes": 44060,
+      "comments": 2605,
+      "er": 4.53,
+      "language": "en",
+      "duration": 141,
+      "word_count": 515,
+      "structure": "LISTICLE",
+      "blocks": [
+        "HOOK:lista",
+        "PROBLEMA",
+        "PASSO-A-PASSO",
+        "LISTA",
+        "PRODUTO/RECOMENDAÇÃO",
+        "CONCLUSÃO"
+      ],
+      "url": "https://www.instagram.com/p/DVPWMbRjwuj/"
+    }
+  ],
+  "block_comparison": [
+    {
+      "block": "LISTA",
+      "top_20_pct": 32.87671232876712,
+      "rest_pct": 10.884353741496598,
+      "diff": 21.992358587270523
+    },
+    {
+      "block": "PASSO-A-PASSO",
+      "top_20_pct": 31.506849315068493,
+      "rest_pct": 23.46938775510204,
+      "diff": 8.037461559966452
+    },
+    {
+      "block": "FINAL_ABRUPTO",
+      "top_20_pct": 43.83561643835616,
+      "rest_pct": 38.435374149659864,
+      "diff": 5.4002422886962975
+    },
+    {
+      "block": "CONCLUSÃO",
+      "top_20_pct": 39.726027397260275,
+      "rest_pct": 34.69387755102041,
+      "diff": 5.032149846239868
+    },
+    {
+      "block": "HOOK:demonstração",
+      "top_20_pct": 10.95890410958904,
+      "rest_pct": 6.802721088435375,
+      "diff": 4.156183021153666
+    },
+    {
+      "block": "HOOK:declaração",
+      "top_20_pct": 41.0958904109589,
+      "rest_pct": 37.41496598639456,
+      "diff": 3.6809244245643384
+    },
+    {
+      "block": "PRODUTO/RECOMENDAÇÃO",
+      "top_20_pct": 35.61643835616438,
+      "rest_pct": 32.6530612244898,
+      "diff": 2.9633771316745836
+    },
+    {
+      "block": "PROBLEMA",
+      "top_20_pct": 26.027397260273972,
+      "rest_pct": 23.46938775510204,
+      "diff": 2.558009505171931
+    },
+    {
+      "block": "EXPLICAÇÃO",
+      "top_20_pct": 16.43835616438356,
+      "rest_pct": 14.625850340136054,
+      "diff": 1.8125058242475056
+    },
+    {
+      "block": "HOOK:pergunta",
+      "top_20_pct": 12.32876712328767,
+      "rest_pct": 11.904761904761903,
+      "diff": 0.42400521852576745
+    },
+    {
+      "block": "CTA",
+      "top_20_pct": 13.698630136986301,
+      "rest_pct": 13.60544217687075,
+      "diff": 0.09318796011555186
+    },
+    {
+      "block": "PROMESSA_FINAL",
+      "top_20_pct": 19.17808219178082,
+      "rest_pct": 19.727891156462583,
+      "diff": -0.5498089646817625
+    },
+    {
+      "block": "HOOK:lista",
+      "top_20_pct": 5.47945205479452,
+      "rest_pct": 7.482993197278912,
+      "diff": -2.0035411424843916
+    },
+    {
+      "block": "HOOK:condicional",
+      "top_20_pct": 6.8493150684931505,
+      "rest_pct": 9.523809523809524,
+      "diff": -2.674494455316373
+    },
+    {
+      "block": "HOOK:alerta",
+      "top_20_pct": 23.28767123287671,
+      "rest_pct": 26.87074829931973,
+      "diff": -3.5830770664430176
+    },
+    {
+      "block": "CONTEÚDO_DIRETO",
+      "top_20_pct": 35.61643835616438,
+      "rest_pct": 40.476190476190474,
+      "diff": -4.859752120026094
+    },
+    {
+      "block": "PERGUNTA_FINAL",
+      "top_20_pct": 9.58904109589041,
+      "rest_pct": 15.646258503401361,
+      "diff": -6.057217407510951
+    }
+  ]
+}
