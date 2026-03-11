@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 const NAV_ITEMS = [
     { href: '/', icon: '📊', label: 'Dashboard' },
     { href: '/library', icon: '📚', label: 'Biblioteca' },
+    { href: '/arsenal', icon: '⚔️', label: 'Arsenal' },
     { href: '/reports', icon: '📈', label: 'Relatórios' },
     { href: '/generator', icon: '✨', label: 'Gerador IA' },
 ];
