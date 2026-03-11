@@ -14,6 +14,9 @@ export default function ArsenalClient({ posts }) {
     const [sortBy, setSortBy] = useState('date_desc');
     const [selectedPost, setSelectedPost] = useState(null);
 
+    const [currentPage, setCurrentPage] = useState(1);
+    const ITEMS_PER_PAGE = 50;
+
     const profiles = useMemo(() => [...new Set(posts.map(p => p.owner))].sort(), [posts]);
     const topics = useMemo(() => [...new Set(posts.map(p => p.topic))].sort(), [posts]);
 
@@ -42,6 +45,9 @@ export default function ArsenalClient({ posts }) {
         return result;
     }, [posts, search, topicFilter, profileFilter, sortBy]);
 
+    const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE) || 1;
+    const paginatedPosts = filtered.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
+
     return (
         <>
             {/* Search & Filters */}
@@ -52,17 +58,17 @@ export default function ArsenalClient({ posts }) {
                     type="text"
                     placeholder="🔍 Buscar palavras na transcrição ou legenda..."
                     value={search}
-                    onChange={e => setSearch(e.target.value)}
+                    onChange={e => { setSearch(e.target.value); setCurrentPage(1); }}
                 />
-                <select value={topicFilter} onChange={e => setTopicFilter(e.target.value)}>
+                <select value={topicFilter} onChange={e => { setTopicFilter(e.target.value); setCurrentPage(1); }}>
                     <option value="">🎯 Todos os Temas</option>
                     {topics.map(t => <option key={t} value={t}>{t}</option>)}
                 </select>
-                <select value={profileFilter} onChange={e => setProfileFilter(e.target.value)}>
+                <select value={profileFilter} onChange={e => { setProfileFilter(e.target.value); setCurrentPage(1); }}>
                     <option value="">👤 Todos os Perfis</option>
                     {profiles.map(p => <option key={p} value={p}>@{p}</option>)}
                 </select>
-                <select value={sortBy} onChange={e => setSortBy(e.target.value)}>
+                <select value={sortBy} onChange={e => { setSortBy(e.target.value); setCurrentPage(1); }}>
                     <option value="date_desc">📅 Mais Recentes</option>
                     <option value="date_asc">📅 Mais Antigos</option>
                     <option value="views_desc">👁️ Mais Views</option>
@@ -83,7 +89,7 @@ export default function ArsenalClient({ posts }) {
                             <th>Data</th>
                             <th>Tema</th>
                             <th>Perfil</th>
-                            <th style={{ cursor: 'pointer' }} onClick={() => setSortBy(sortBy === 'views_desc' ? 'views_asc' : 'views_desc')}>
+                            <th style={{ cursor: 'pointer' }} onClick={() => { setSortBy(sortBy === 'views_desc' ? 'views_asc' : 'views_desc'); setCurrentPage(1); }}>
                                 Views {sortBy.includes('views') ? (sortBy === 'views_desc' ? '↓' : '↑') : ''}
                             </th>
                             <th>Trecho (Transcrição)</th>
@@ -91,7 +97,7 @@ export default function ArsenalClient({ posts }) {
                         </tr>
                     </thead>
                     <tbody>
-                        {filtered.slice(0, 150).map(p => (
+                        {paginatedPosts.map(p => (
                             <tr key={p.id}>
                                 <td style={{ whiteSpace: 'nowrap', fontSize: '0.85rem' }}>{p.date}</td>
                                 <td>
@@ -113,11 +119,32 @@ export default function ArsenalClient({ posts }) {
                         ))}
                     </tbody>
                 </table>
-                {filtered.length > 150 && (
-                    <div style={{ padding: 16, textAlign: 'center', color: 'var(--text-muted)', fontSize: '0.85rem' }}>
-                        Mostrando os 150 primeiros de {filtered.length} resultados. Use a busca para filtrar mais!
+                <div style={{ padding: 16, borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'var(--bg-secondary)', position: 'sticky', bottom: 0 }}>
+                    <div style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>
+                        Mostrando {filtered.length > 0 ? ((currentPage - 1) * ITEMS_PER_PAGE) + 1 : 0} a {Math.min(currentPage * ITEMS_PER_PAGE, filtered.length)} de {filtered.length} vídeos
                     </div>
-                )}
+                    {totalPages > 1 && (
+                        <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                            <button
+                                className="btn btn-sm btn-secondary"
+                                disabled={currentPage === 1}
+                                onClick={() => { setCurrentPage(prev => Math.max(1, prev - 1)); document.querySelector('.table-container').scrollTo(0, 0); }}
+                            >
+                                ← Anterior
+                            </button>
+                            <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', margin: '0 8px' }}>
+                                Página <strong>{currentPage}</strong> de {totalPages}
+                            </span>
+                            <button
+                                className="btn btn-sm btn-secondary"
+                                disabled={currentPage === totalPages}
+                                onClick={() => { setCurrentPage(prev => Math.min(totalPages, prev + 1)); document.querySelector('.table-container').scrollTo(0, 0); }}
+                            >
+                                Seguinte →
+                            </button>
+                        </div>
+                    )}
+                </div>
             </div>
 
             {/* Modal View */}
