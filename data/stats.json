@@ -1,7 +1,7 @@
 {
   "totalPosts": 663,
   "totalVideos": 572,
-  "totalWithTranscription": 394,
+  "totalWithTranscription": 540,
   "totalViews": 147688940,
   "totalLikes": 6596097,
   "totalComments": 634815,
@@ -38,12 +38,15 @@
     "vivacy_peru_stylage_y_desirial"
   ],
   "languages": {
-    "en": 183,
-    "pt": 124,
-    "es": 95,
-    "ko": 3,
+    "en": 202,
+    "es": 219,
+    "pt": 127,
+    "ko": 4,
     "haw": 1,
-    "km": 1
+    "te": 1,
+    "la": 1,
+    "km": 1,
+    "ru": 1
   },
   "topicsCoverage": {}
 }
