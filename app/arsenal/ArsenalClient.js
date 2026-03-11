@@ -14,6 +14,10 @@ export default function ArsenalClient({ posts }) {
     const [sortBy, setSortBy] = useState('date_desc');
     const [selectedPost, setSelectedPost] = useState(null);
 
+    // AI State
+    const [aiLoading, setAiLoading] = useState(false);
+    const [aiResult, setAiResult] = useState('');
+
     const [currentPage, setCurrentPage] = useState(1);
     const ITEMS_PER_PAGE = 50;
 
@@ -158,7 +162,7 @@ export default function ArsenalClient({ posts }) {
                                     Tema: {selectedPost.topic}
                                 </span>
                             </div>
-                            <button className="modal-close" onClick={() => setSelectedPost(null)}>✕</button>
+                            <button className="modal-close" onClick={() => { setSelectedPost(null); setAiResult(''); }}>✕</button>
                         </div>
 
                         <div className="metric-row">
@@ -177,6 +181,68 @@ export default function ArsenalClient({ posts }) {
                         <h3 style={{ fontSize: '1rem', marginBottom: 12, color: 'var(--accent)' }}>🎙️ Transcrição Completa</h3>
                         <div className="transcription-text" style={{ fontSize: '1.05rem', lineHeight: '1.6', color: '#fff' }}>
                             {selectedPost.transcription}
+                        </div>
+
+                        {/* AI Gemini Integration */}
+                        <div style={{ marginTop: 24, padding: '20px', background: 'var(--bg-secondary)', borderRadius: 'var(--radius-md)', border: '1px solid rgba(139, 92, 246, 0.3)' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: aiResult ? 16 : 0 }}>
+                                <div>
+                                    <h4 style={{ margin: 0, display: 'flex', alignItems: 'center', gap: 6 }}>✨ Inteligência Artificial Gemini</h4>
+                                    <p style={{ margin: 0, marginTop: 4, fontSize: '0.85rem', color: 'var(--text-muted)' }}>Deixe a IA analisar e melhorar este script para o seu próximo vídeo.</p>
+                                </div>
+                                <button
+                                    className="btn btn-primary"
+                                    style={{ background: 'var(--primary)', borderColor: 'var(--primary)' }}
+                                    disabled={aiLoading}
+                                    onClick={async () => {
+                                        setAiLoading(true);
+                                        setAiResult('');
+                                        try {
+                                            const textToProcess = `Legenda: ${selectedPost.caption}\n\nTranscrição Áudio: ${selectedPost.transcription}`;
+                                            const prompt = `Analise este conteúdo de dermatologia (legenda e áudio do vídeo original).
+O objetivo é criar uma VERSÃO MELHORADA focado em engajamento.
+
+O que eu preciso como resposta (formato markdown):
+1. [Avaliação Rápida]: O que foi bem feito e o que faltou nesse vídeo.
+2. [O Hook de Ouro]: Dê 3 opções de ganchos super chamativos (hooks) para começar o vídeo.
+3. [Novo Roteiro Aprimorado]: Um roteiro passo a passo (de 45 segundos) melhorando a explicação, mais direto ao ponto, com CTA no final.
+
+Conteúdo:
+${textToProcess}`;
+
+                                            const res = await fetch('/api/gemini', {
+                                                method: 'POST',
+                                                headers: { 'Content-Type': 'application/json' },
+                                                body: JSON.stringify({ prompt })
+                                            });
+                                            if (!res.ok) throw new Error('Erro na API Gemini');
+                                            const data = await res.json();
+                                            setAiResult(data.text);
+                                        } catch (e) {
+                                            console.error(e);
+                                            setAiResult('❌ Erro ao conectar com o Gemini. Verifique a API Key.');
+                                        } finally {
+                                            setAiLoading(false);
+                                        }
+                                    }}
+                                >
+                                    {aiLoading ? '⏳ Analisando...' : 'Avaliar e Melhorar com Gemini'}
+                                </button>
+                            </div>
+
+                            {aiResult && (
+                                <div className="transcription-text" style={{
+                                    background: '#1a1b26',
+                                    padding: '20px',
+                                    borderRadius: '8px',
+                                    border: '1px solid rgba(139, 92, 246, 0.5)',
+                                    marginTop: '16px',
+                                    color: '#fff',
+                                    fontSize: '0.95rem'
+                                }}>
+                                    <div dangerouslySetInnerHTML={{ __html: aiResult.replace(/\\n/g, '<br/>') }} />
+                                </div>
+                            )}
                         </div>
 
                         {selectedPost.url && (
